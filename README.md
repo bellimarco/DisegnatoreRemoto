@@ -1,4 +1,5 @@
 # DisegnatoreRemoto
+![](LAM/Records/foto%20componenti/Main.JPG)
 My highschool end-project in robotics and programming.
 
 Or "Lavoro di Maturità" (LAM), as referred to in the italian speaking switzerland region.
