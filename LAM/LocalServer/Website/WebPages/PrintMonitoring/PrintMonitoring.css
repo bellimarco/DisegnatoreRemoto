@@ -1,0 +1,82 @@
+.PrintingInfo-div{
+  position: fixed;
+  display: block;
+}
+.leftdiv{
+  left:0px;
+  top:50%;
+  transform: translateY(-50%);
+}
+.rightdiv{
+  right:0px;
+  top:50%;
+  transform: translateY(-50%);
+}
+.left{
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-left:0;
+}
+.right{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin-right:0;
+}
+.PrintingInfo{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: rgba(200,200,200,0.7);
+}
+.PrintingInfo *{
+  display: block;
+  font-weight: bold;
+  margin: 0.4em;
+}
+.PrintingInfo button{
+  display: inline-block;
+  height:4em;
+  width:8em;
+  margin-left: 1em;
+  border-radius: 8px;
+  background-color: rgba(255,255,255,0.5);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#activate-button{
+  background-image: url("/images/icon-play.png");
+}
+#addphrase-button{
+  background-position: right;
+  background-image: url("/images/icon-plus.png");
+}
+#addletter-button{
+  background-position: right;
+  background-image: url("/images/icon-plus.png");
+}
+#home-button{
+  background-image: url("/images/icon-center.png");
+}
+#setcoords-button{
+  background-position: center;
+  background-image: url('/images/icon-coordinates.png');
+}
+#pushmanual-button{
+  background-position: center;
+  background-image: url('/images/icon-move.png');
+}
+#clear-button{
+  background-position: right;
+  background-image: url('/images/icon-erase.png');
+}
+
+#VarTtot{
+  display: inline-block;
+}
+
+#liveupdate-button{
+  background-color: rgba(130,255,0,0.8);
+}
+#penmode-button{
+  background-color: rgba(130,255,0,0.8);
+}
