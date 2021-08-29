@@ -1,15 +1,13 @@
 # DisegnatoreRemoto
 ![](LAM/Records/foto%20componenti/Main.JPG)
-My highschool end-project in robotics and programming.
-
-Or "Lavoro di Maturità" (LAM), as referred to in the italian speaking switzerland region.
+My highschool end-project in robotics and programming, or "Lavoro di Maturità" (LAM), as referred to in italian.
 
 ## About
 1. start the node js application from the "LocalServer" folder
 2. interface with the application through the browser at the specified port adress
 3. have fun with the path file creator webpages (through free drawing or image scanning)
 4. manage, manipulate and send to print path files through a handy gallery webpage
-5. setup and turn on your personal rob... oh nevermind.
+5. setup and turn on your robo... oh nevermind.
 6. start and monitor in live the printing process from the dedicated webpage
 7. marvel at the outcome
 
