@@ -1,0 +1,63 @@
+For Convention, Order and Clarity in the code throughout the whole project:
+
+
+EVERY "workstation" page includes theese files(included by the html):
+  "Mode".html           core
+  "Mode".css
+  "Mode"Mode.js
+  -eventually other .js files-
+
+  globalvariables.js    JScripts
+  letter.js
+  phrasesettings.js
+  navsettings.js
+  focuscanvas.js
+  MJCanvas.js
+  MainCanvas.js
+
+  p5.js                 libraries
+  p5.dom.min.js
+  jquery-3.4.1.min.js
+
+  CommonStyle.css       css style
+  CanvasPageStyle.css
+  NavStyle.css
+  GalleryStyle.css
+
+
+the only things that change through every "workstation" page are:
+  the html layout and content elements in the html
+  the code for the software that gets put in the Mode.js file
+
+HTML
+remember that if something is meant to be in the nav,
+it must be put in .nav-content divs in the right navigation,
+where the things related only to the specific page are present
+
+if an element in the navigation is interactable,
+you must put it in the class .nav-active,
+because by default the navs are pointer-events:none.
+
+CSS
+the css affecting the specific page must all be put in the file "Mode".css,
+because all the other files are common.
+the css must only affect elements added by the specific page.
+
+JAVASCRIPT
+the canvas file is created as: var MainCanvas = new p5((p)=>\{code\},"body-div")
+see the MainCanvas.js file for more info
+
+The code of the specific page is written in the Mode.js file
+try not to use global variables,
+the JScripts folder only contains common javascript files, so if you have to add
+a file specific to the page(another canvas, a set of functions) create it
+in the folder of the "workstation" page.
+
+
+
+SERVER
+for now the server only has one main JS code file(and other resources folders).
+The local server (on my iMac) is created through the terminal
+
+
+please remember to update this guide }

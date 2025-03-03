@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="/libraries/p5.js"></script>
+  <script src="/libraries/p5.dom.min.js"></script>
+  <script src="/libraries/jquery-3.4.1.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="/CSS/CommonStyle.css">
+  <link rel="stylesheet" type="text/css" href="/CSS/CanvasPageStyle.css">
+  <link rel="stylesheet" type="text/css" href="/CSS/NavStyle.css">
+  <link rel="stylesheet" type="text/css" href="PhraseGallery.css">
+  <link rel="stylesheet" type="text/css" href="/CSS/GalleryStyle.css">
+
+  <meta charset="utf-8">
+</head>
+<body>
+  <div id="body-div">
+
+    <div class="main-nav-div left-main-nav-div">
+    <div class="nav-div left-nav-div">
+
+      <div id="left1-nav" class="nav left-nav">
+        <div class="nav-content">Galleria
+          <p>In questa modalità puoi esplorare i file salvati e modificarli</p>
+        </div>
+        <div class="nav-content">
+          <p><a style="font-weight: bold"class="nav-active" href="/WebPages/FreeDrawing/FreeDrawing.html">Disegno Libero</a></p>
+          <p><a style="font-weight: bold"class="nav-active" href="/WebPages/ImageScan/ImageScan.html">Scansiona Immagine</a></p>
+          <p><a style="font-weight: bold"class="nav-active" href="/WebPages/PrintMonitoring/PrintMonitoring.html">Stampa</a></p>
+          <p><a style="font-weight: bold"class="nav-active" href="/WebPages/HomePage/HomePage.html">Homepage</a></p>
+        </div>
+      </div>
+      <div id="left2-nav" class="nav left-nav">
+        <div class="nav-content">Documento</div>
+        <div class="nav-content">
+          <label>Salva con nome:</label>
+          <input id="projectname-input" class="nav-active" type="text" placeholder="untitled">
+        </div>
+        <div class="nav-content">
+          <button id="erase-button" class="nav-active"></button>
+          <button id="save-button" class="nav-active"></button>
+          <button id="send-button" class="nav-active"></button>
+        </div>
+      </div>
+      <div id="left3-nav" class="nav left-nav">
+        <div class="nav-content">Galleria</div>
+        <div class="nav-content">
+          <div class="gallery nav-gallery nav-active">
+          </div>
+        </div>
+      </div>
+      <div id="left4-nav" class="nav left-nav">
+        <div class="nav-content">Muovi Tela</div>
+        <div class="nav-content">
+          <button id="CartesianReferenceButton" class="nav-active"></button>
+          <button id="ResetFocusButton" class="nav-active"></button>
+        </div>
+        <div class="nav-content">
+          <div id="MJCanvasContainer" class="nav-active"></div>
+          <input id="MJSlider" class="nav-active"type="range" min="0" max="91" value="21" class="slider">
+        </div>
+      </div>
+      <div id="left5-nav" class="nav left-nav">
+        <div class="nav-content">Settings</div>
+      </div>
+
+    </div>
+    <div class="nav-expand-div left-nav-expand-div">
+      <button id="left1-nav-expand" class="nav-expand"></button>
+      <button id="left2-nav-expand" class="nav-expand"></button>
+      <button id="left3-nav-expand" class="nav-expand"></button>
+      <button id="left4-nav-expand" class="nav-expand"></button>
+      <button id="left5-nav-expand" class="nav-expand"></button>
+    </div>
+    </div>
+
+    <div class="main-nav-div right-main-nav-div">
+    <div class="nav-expand-div right-nav-expand-div">
+        <button id="right1-nav-expand" class="nav-expand"></button>
+        <button id="right2-nav-expand" class="nav-expand"></button>
+    </div>
+    <div class="nav-div right-nav-div">
+      <div id="right1-nav" class="nav right-nav">
+        <div class="nav-content">Seleziona</div>
+        <div class="nav-content">
+          <label>Cosa vuoi selezionare?</label>
+          <br>
+          <button id="PointEdit-button" class="nav-active">modifica punto</button>
+          <br>
+          <button id="LetterEdit-button" class="nav-active">modifica lettera</button>
+          <br>
+          <button id="PhraseEdit-button" class="nav-active">modifica frase</button>
+        </div>
+      </div>
+      <div id="right2-nav" class="nav right-nav">
+        <div class="nav-content">Azioni</div>
+        <div class="nav-content">
+          <button id="eraseselected-button" class="nav-active">Elimina Selezionato</button>
+          <button id="shapeselected-button" class="nav-active">Riempi/Non Riempire</button>
+          <button id="pressselected-button" class="nav-active" style="width:68%; display:inline-block">imposta pressione</button>
+          <input id="setpress" type="number" class="nav-active" placeholder="100" style="width:20%; display:inline-block">
+          <button id="rename-button" class="nav-active">Rinomina file</button>
+          <button id="erasegallery-button" class="nav-active">Elimina dalla galleria</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </div>
+
+  <div id="resize-div">
+    <div id="resize-flexdiv">
+      <button id="undo-button"></button>
+      <div><p id="angleval">0°</p><p id="scaleval">1x</p></div>
+      <button id="confirm-button"></button>
+    </div>
+    <input type="range" min="-130" max="130" value="0" class="slider" id="rotation-slider">
+    <input type="range" min="0" max="800" value="400" class="slider" id="scale-slider">
+  </div>
+
+
+  <script src="/JScripts/globalvariables.js"></script>
+  <script src="/JScripts/letter.js"></script>
+  <script src="/JScripts/navsettings.js"></script>
+  <script src="/JScripts/phrasesettings.js"></script>
+  <script src="/JScripts/focuscanvas.js"></script>
+  <script src="/JScripts/MJCanvas.js"></script>
+  <script src="PhraseGalleryMode.js"></script>
+  <script src="/JScripts/MainCanvas.js"></script>
+
+
+</body>
+</html>

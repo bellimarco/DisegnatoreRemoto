@@ -1,0 +1,29 @@
+#draw-button{
+  background-color:rgba(255,0,0,0.8);
+  width:90%;
+}
+#penpreview-container{
+  display: block;
+
+  width:100px;
+  height:100px;
+  background-color: white;
+  border-radius: 12px;
+}
+#penpreview{
+  position: relative;
+  display: block;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0,0,0,1);
+  border-radius: 50%;
+  width:5px;
+  height:5px;
+}
+#right1-nav-expand{
+  background-image: url("/images/icon-switch.png");
+}
+#right2-nav-expand{
+  background-image: url("/images/icon-pen.png");
+}

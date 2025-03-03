@@ -1,0 +1,63 @@
+html{
+  background-color: orange;
+  color:black;
+  z-index: 1;
+}
+#MJCanvasContainer{
+  width:100%;
+}
+#MJSlider{
+  display: block;
+  position:relative;
+  width:80%;
+  left:50%;
+  transform: translateX(-50%);
+  margin-top: 8px;
+}
+#CartesianReferenceButton{
+  display: inline-block;
+  border-radius: 8px;
+  width: 20%;
+  background-color: rgba(220,220,220,0.7);
+  background-image: url('/images/icon-coordinates.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#ResetFocusButton{
+  display: inline-block;
+  border-radius: 8px;
+  width: 20%;
+  background-color: rgba(220,220,220,0.7);
+  background-image: url('/images/icon-center.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#erase-button{
+  background-image: url("/images/icon-erase.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255,0,0,0.25);
+  border: 0px solid black;
+}
+#save-button{
+  background-image: url("/images/icon-save.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(130,255,0,0.25);
+  border: 0px solid black;
+}
+#send-button{
+  background-image: url("/images/icon-send.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(100,180,255,0.25);
+  border: 0px solid black;
+}
+#main-canvas{
+  z-index: -2;
+}
